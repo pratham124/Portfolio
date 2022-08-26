@@ -1,6 +1,6 @@
 :root {
   --primary-color: rgb(44, 52, 63);
-  --secondary-color: #5cd3ad;
+  --secondary-color: rgb(92, 211, 173);
 }
 
 * {
@@ -27,18 +27,31 @@ html {
   display: flex;
   flex-direction: column;
   gap: 25%;
-  margin-bottom: 12rem;
 }
 
 .container {
   padding: 1rem 10%;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: 9rem;
+  position: relative;
+  width: 100%;
+}
+
+.nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(44, 52, 63, 0.9);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  padding: 0 2rem;
 }
 
 .logo {
