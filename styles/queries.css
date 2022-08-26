@@ -1,4 +1,8 @@
 @media (max-width: 55em) {
+  #header {
+    gap: 30%;
+  }
+
   .header-text h1 {
     font-size: 4rem;
   }
@@ -8,6 +12,7 @@
     text-align: center;
     width: 60%;
     margin: auto;
+    row-gap: 8rem;
   }
 
   .project-list {
@@ -15,6 +20,7 @@
     text-align: center;
     width: 60%;
     margin: auto;
+    row-gap: 8rem;
   }
 
   .sub-title {
@@ -57,5 +63,49 @@
 
   .contact-info {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #header {
+    gap: 25%;
+  }
+
+  .header-text {
+    width: 75%;
+  }
+
+  .header-text p {
+    font-size: 2rem;
+  }
+
+  .header-text h1 {
+    font-size: 3rem;
+  }
+
+  .tools-list {
+    width: 75%;
+  }
+
+  .project-list {
+    width: 75%;
+  }
+
+  .about-col-2 p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 25em) {
+  .tools-list {
+    width: 90%;
+  }
+
+  .project-list {
+    width: 90%;
+  }
+
+  .about-col-2 p {
+    width: 100%;
   }
 }
