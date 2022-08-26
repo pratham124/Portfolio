@@ -42,9 +42,9 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Tools</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -66,9 +66,9 @@
             passion for web development. Currently, I'm looking for an internship to apply, and devlop my creative,
             analytical and communicative skills. On my free time, I like to read, learn new tech skills and go
             to the gym.</p>
-          <div class="resume--button">
-            <button class="btn"><span>Resume</span>
-          </div>
+          <a class="resume--button" href="" download="">
+            <button class="btn"><span>Resume</span></button>
+          </a>
         </div>
       </div>
     </div>
@@ -194,12 +194,13 @@
       <div class="row">
         <div class="contact-left">
           <h1 class="sub-title">Contact Me</h1>
-          <p>
+          <p class="contact-info">
             <ion-icon name="mail-outline"></ion-icon> sitoula@ualberta.ca
           </p>
-          <p>
+          <p class="contact-info">
             <ion-icon name="call-outline"></ion-icon> +1 780-850-1978
           </p>
+
           <div class="social-icons">
             <a href="https://www.linkedin.com/in/pratham-sitoula"
               onclick="window.open(this.href,'_blank');return false;">
@@ -209,18 +210,24 @@
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </div>
-          <a href="" class="btn2" download="">Download CV</a>
+          <div class="cv--div">
+            <a class="cv--button" href="" download="">
+              <button class="btn"><span>Download CV</span></button>
+            </a>
+
+          </div>
         </div>
         <div class="contact-right">
-          <form>
+          <form netlify>
             <input type="text" name="Name" placeholder="Your Name" required />
             <input type="text" name="email" placeholder="Your Email" required />
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn2">Submit</button>
+            <button type="submit" class="btn2 contact-button">Submit</button>
           </form>
         </div>
       </div>
     </div>
+
 
     <div class="copyright">
       <p>Copyright &copy; <span class="year"> </span> by Pratham Sitoula. All rights reserved.</p>

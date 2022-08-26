@@ -27,6 +27,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 25%;
+  margin-bottom: 12rem;
 }
 
 .container {
@@ -98,7 +99,8 @@ nav ul li a:hover::after {
 #about {
   width: 100%;
   background-color: var(--primary-color);
-  padding: 8rem 0;
+  padding: 12rem 0;
+  padding-bottom: 5rem;
   color: #ababab;
 }
 
@@ -110,6 +112,7 @@ nav ul li a:hover::after {
 
 .about-col-1 {
   flex-basis: 35%;
+  padding-top: 8rem;
 }
 
 .about-col-1 img {
@@ -142,6 +145,7 @@ nav ul li a:hover::after {
 .resume--button {
   margin-top: 6rem;
   align-self: flex-start;
+  text-decoration: none;
 }
 
 .btn {
@@ -192,7 +196,8 @@ nav ul li a:hover::after {
 #tools {
   width: 100%;
   background-color: var(--primary-color);
-  padding: 3rem 0;
+  padding: 12rem 0;
+  padding-bottom: 0;
 }
 
 .tools-list {
@@ -250,7 +255,7 @@ ion-icon {
 #projects {
   width: 100%;
   background-color: var(--primary-color);
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 
 .project-list {
@@ -351,6 +356,7 @@ ion-icon {
 /* Contact */
 
 #contact {
+  padding-top: 10rem;
   width: 100%;
   background-color: var(--primary-color);
 }
@@ -368,13 +374,12 @@ ion-icon {
 }
 
 .contact-left p ion-icon {
-  color: #ababab;
   margin-right: 1.5rem;
   font-size: 2.5rem;
 }
 
 .social-icons {
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 
 .social-icons a {
@@ -386,17 +391,28 @@ ion-icon {
   cursor: pointer;
 }
 
+.social-icons ion-icon {
+  color: #ababab;
+}
+
+.social-icons ion-icon:hover {
+  color: var(--secondary-color);
+}
+
 .social-icons a:hover {
   transform: translateY(-5px);
 }
 
-/* .btn.btn2 {
-  display: inline-block;
-  background: var(--secondary-color);
-} */
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+}
 
 .contact-right form {
   width: 100%;
+  position: relative;
 }
 
 form input,
@@ -412,7 +428,7 @@ form textarea {
   border-radius: 0.6rem;
 }
 
-form .btn2 {
+.btn2 {
   padding: 1.4rem 6rem;
   font-size: 1.8rem;
   margin-top: 2rem;
@@ -424,6 +440,64 @@ form .btn2 {
   text-align: center;
   padding: 2.5rem 0;
   font-weight: 300;
-  margin-top: 4rem;
+  margin-top: 14rem;
   color: #767676;
+}
+
+.contact-button {
+  transform: translate(-50%, -50%);
+  padding: 1.6rem 3.2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  font-family: verdana;
+  font-size: 1.5rem;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 1rem;
+  display: block;
+}
+
+form .contact-button {
+  position: absolute;
+  bottom: -30%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  padding: 1.7rem 6rem;
+  background-color: var(--secondary-color);
+  color: white;
+  font-family: verdana;
+  font-size: 1.5rem;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.contact-button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -110%;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: left 0.7s ease-in-out;
+}
+
+.contact-button:hover::before {
+  left: 120%;
+}
+
+.cv--button {
+  text-decoration: none;
+}
+
+.cv--div {
+  display: flex;
+}
+
+.cv--div.btn {
+  padding: 1.7rem 3rem;
 }
