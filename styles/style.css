@@ -110,7 +110,7 @@ nav ul li a:hover::after {
 /* ABOUT */
 
 #about {
-  width: 100%;
+  width: 100vw;
   background-color: var(--primary-color);
   padding: 12rem 0;
   padding-bottom: 5rem;
@@ -159,6 +159,11 @@ nav ul li a:hover::after {
   margin-top: 6rem;
   align-self: flex-start;
   text-decoration: none;
+}
+
+.resume--div {
+  align-self: flex-start;
+  margin-top: 6rem;
 }
 
 .btn {
@@ -215,7 +220,7 @@ nav ul li a:hover::after {
 
 .tools-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;
   margin-top: 5rem;
 }
@@ -273,7 +278,7 @@ ion-icon {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;
   margin-top: 5rem;
 }
@@ -474,7 +479,7 @@ form textarea {
 form .contact-button {
   position: absolute;
   bottom: -30%;
-  left: 12%;
+  left: 50%;
   transform: translate(-50%, -50%);
   padding: 1.7rem 6rem;
   background-color: var(--secondary-color);

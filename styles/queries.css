@@ -1,0 +1,61 @@
+@media (max-width: 55em) {
+  .header-text h1 {
+    font-size: 4rem;
+  }
+
+  .tools-list {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .sub-title {
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+
+  .about-col-1 {
+    display: none;
+  }
+
+  .about-col-2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .about-col-2 p {
+    padding-right: 0;
+    line-height: 2;
+    width: 80%;
+  }
+
+  .resume--div {
+    align-self: center;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-info {
+    margin-top: 0;
+  }
+}
