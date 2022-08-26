@@ -271,6 +271,7 @@ ion-icon {
   border-radius: 1rem;
   display: block;
   transition: transform 0.5s;
+  height: 40rem;
 }
 
 .project-techstack {
