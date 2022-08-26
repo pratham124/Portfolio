@@ -6,3 +6,7 @@ window.addEventListener("load", () => {
     window.scrollTo(0, 0);
   }, 5000);
 });
+
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
