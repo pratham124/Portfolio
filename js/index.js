@@ -16,7 +16,6 @@ const nav = document.querySelector(".nav");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent.isIntersecting);
     if (ent.isIntersecting == false) {
       nav.classList.add("sticky");
     }
