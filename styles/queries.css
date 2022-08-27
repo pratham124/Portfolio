@@ -7,6 +7,10 @@
     display: none;
   }
 
+  .col {
+    display: block;
+  }
+
   .header-text h1 {
     font-size: 4rem;
   }
