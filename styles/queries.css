@@ -3,12 +3,44 @@
     gap: 30%;
   }
 
-  .nav--web {
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 52, 63, 0.97);
+    opacity: 100;
+    gap: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .nav h2 {
     display: none;
+  }
+
+  .nav--web {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .col {
     display: block;
+    z-index: 9999;
   }
 
   .header-text h1 {

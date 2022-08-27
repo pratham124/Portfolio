@@ -13,15 +13,18 @@ yearEl.textContent = currentYear;
 
 const header = document.getElementById("header");
 const nav = document.querySelector(".nav");
+const smallerScreenNav = document.querySelector(".mobile-nav");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     if (ent.isIntersecting == false) {
       nav.classList.add("sticky");
+      smallerScreenNav.classList.add("sticky");
     }
 
     if (ent.isIntersecting == true) {
       nav.classList.remove("sticky");
+      smallerScreenNav.classList.remove("sticky");
     }
   },
   {
@@ -33,7 +36,18 @@ const obs = new IntersectionObserver(
 obs.observe(header);
 
 const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".nav");
 
 hamburger.addEventListener("click", () => {
+  mobileNav.style.opacity = "0";
+  mobileNav.style.visibility = "hidden";
+  mobileNav.style.pointerEvents = "none";
+
   hamburger.classList.toggle("is-active");
+
+  if (hamburger.classList.contains("is-active")) {
+    mobileNav.style.opacity = "100";
+    mobileNav.style.visibility = "visible";
+    mobileNav.style.pointerEvents = "all";
+  }
 });
