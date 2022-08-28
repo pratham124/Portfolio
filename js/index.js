@@ -56,6 +56,9 @@ hamburger.addEventListener("click", () => {
   }
 });
 
-nav.addEventListener("click", (e) => {
-  console.log(e.target);
+mobileNav.addEventListener("click", (e) => {
+  const click = e.target;
+  if (!click.matches("a")) return;
+  mobileNavReset();
+  hamburger.classList.remove("is-active");
 });
