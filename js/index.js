@@ -3,6 +3,7 @@ const loader = document.querySelector(".loader-wrapper");
 window.addEventListener("load", () => {
   setTimeout(() => {
     loader.style.display = "none";
+    document.documentElement.style.setProperty("--scrollbar", "block");
     window.scrollTo(0, 0);
   }, 5000);
 });
