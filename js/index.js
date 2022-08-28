@@ -1,5 +1,5 @@
+//Add preloading to website that lasts for 5 secs
 const loader = document.querySelector(".loader-wrapper");
-
 window.addEventListener("load", () => {
   setTimeout(() => {
     loader.style.display = "none";
@@ -7,22 +7,24 @@ window.addEventListener("load", () => {
   }, 5000);
 });
 
+//Updates the copyright date
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
+//Sticky nav implementation
 const header = document.getElementById("header");
 const nav = document.querySelector(".nav");
 const smallerScreenNav = document.querySelector(".mobile-nav");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    if (ent.isIntersecting == false) {
+    if (!ent.isIntersecting) {
       nav.classList.add("sticky");
       smallerScreenNav.classList.add("sticky");
     }
 
-    if (ent.isIntersecting == true) {
+    if (ent.isIntersecting) {
       nav.classList.remove("sticky");
       smallerScreenNav.classList.remove("sticky");
     }
@@ -35,6 +37,7 @@ const obs = new IntersectionObserver(
 );
 obs.observe(header);
 
+//Mobile Nav implementation
 const hamburger = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".nav-mobile");
 
