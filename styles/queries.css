@@ -10,6 +10,10 @@
   }
 
   .nav {
+    display: none;
+  }
+
+  .nav-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,11 +32,11 @@
     z-index: 10;
   }
 
-  .nav h2 {
+  .nav-mobile h2 {
     display: none;
   }
 
-  .nav--web {
+  .nav--mobile {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -40,7 +44,7 @@
 
   .col {
     display: block;
-    z-index: 9999;
+    z-index: 1000;
   }
 
   .header-text h1 {

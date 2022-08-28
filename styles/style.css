@@ -52,6 +52,10 @@ html {
   z-index: 10;
 }
 
+.nav-mobile {
+  display: none;
+}
+
 .nav.sticky {
   position: fixed;
   top: 0;

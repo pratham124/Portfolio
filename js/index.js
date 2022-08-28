@@ -36,18 +36,26 @@ const obs = new IntersectionObserver(
 obs.observe(header);
 
 const hamburger = document.querySelector(".hamburger");
-const mobileNav = document.querySelector(".nav");
+const mobileNav = document.querySelector(".nav-mobile");
 
-hamburger.addEventListener("click", () => {
+const mobileNavReset = () => {
   mobileNav.style.opacity = "0";
   mobileNav.style.visibility = "hidden";
   mobileNav.style.pointerEvents = "none";
+};
 
+hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");
 
   if (hamburger.classList.contains("is-active")) {
     mobileNav.style.opacity = "100";
     mobileNav.style.visibility = "visible";
     mobileNav.style.pointerEvents = "all";
+  } else {
+    mobileNavReset();
   }
+});
+
+nav.addEventListener("click", (e) => {
+  console.log(e.target);
 });
