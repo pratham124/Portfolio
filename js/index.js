@@ -33,7 +33,7 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-200px",
+    rootMargin: "-80px",
   }
 );
 obs.observe(header);
