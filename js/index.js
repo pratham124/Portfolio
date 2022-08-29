@@ -19,7 +19,7 @@ const nav = document.querySelector(".nav");
 const smallerScreenNav = document.querySelector(".mobile-nav");
 const obs = new IntersectionObserver(
   function (entries) {
-    const ent = entries[0];
+    const [ent] = entries;
     if (!ent.isIntersecting) {
       nav.classList.add("sticky");
       smallerScreenNav.classList.add("sticky");
@@ -65,4 +65,26 @@ mobileNav.addEventListener("click", (e) => {
   if (!click.matches("a")) return;
   mobileNavReset();
   hamburger.classList.remove("is-active");
+});
+
+//Section load
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
 });
