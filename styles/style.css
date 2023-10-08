@@ -396,6 +396,21 @@ ion-icon {
 
 /* Projects */
 
+.btn-more {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid var(--secondary-color);
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.5s;
+}
+.btn-more:hover {
+  background-color: var(--secondary-color);
+}
+
 #projects {
   width: 100%;
   background-color: var(--primary-color);
