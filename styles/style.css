@@ -398,10 +398,10 @@ ion-icon {
 
 .btn-more {
   display: block;
-  margin: 50px auto;
+  margin: 100px auto;
   width: fit-content;
   border: 1px solid var(--secondary-color);
-  padding: 14px 50px;
+  padding: 17px 60px;
   border-radius: 6px;
   text-decoration: none;
   color: white;
