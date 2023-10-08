@@ -398,7 +398,7 @@ ion-icon {
 
 .btn-more {
   display: block;
-  margin: 100px auto;
+  margin: 50px auto;
   width: fit-content;
   border: 1px solid var(--secondary-color);
   padding: 17px 60px;
